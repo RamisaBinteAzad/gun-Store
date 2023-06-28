@@ -1,0 +1,21 @@
+.name{
+    text-align: center;
+}
+.btn1{
+    margin-right: 20px;
+     background-color: green;
+     color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+   border-color: green;
+}
+.btn2{
+    margin-right: 20px;
+     background-color: red;
+     color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+   border-color: red;
+}

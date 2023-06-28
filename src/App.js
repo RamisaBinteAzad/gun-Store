@@ -1,25 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import Test from './Components/Test/Test';
+import Test2 from './Components/Test2/Test2';
+import Counter from './Components/Counter/Counter';
+import { useState } from 'react';
+import Navbar from './Components/Navbar/Navbar';
+import AllGun from './Components/AllGun/AllGun';
 
-function App() {
+
+function App() { 
+  
+  const [count, setCount] = useState(0);
+  const countIncrease = () => {
+    setCount(count + 1);
+  }
+  //  const handleAdd = () => {
+  //    // console.log("clicked");
+  //    setCount(count + 1);
+  //  };
+  //  const handleMinus = () => {
+  //    // console.log("clicked");
+  //    setCount(count - 1);
+  //  };
+  // useState() ekta hook
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Test name="Ramisa"></Test> */}
+      {/* <Counter count={count} handleAdd ={handleAdd} handleMinus={handleMinus}></Counter> */}
+
+      <Navbar count={count}></Navbar>
+      <AllGun countIncrease={countIncrease}></AllGun>
     </div>
   );
 }
-
 export default App;
