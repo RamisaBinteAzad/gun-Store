@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SingleGun from '../SingleGun/SingleGun';
 
 const AllGun = ({countIncrease}) => {
-  const [guns, setGuns] = useState([]);
+  const [guns,setGuns] = useState([]);
   console.log(guns);
   // async() diye korte chaile
   // const datas = async () => {
