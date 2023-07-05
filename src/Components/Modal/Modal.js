@@ -17,6 +17,7 @@ const Modal = ({ data, setModalData }) => {
           <div className="modal-action">
             <label
               onClick={() => setModalData(null)}
+              // sudhu setModalData(null) eta dile click korar agei function ta call hoye thakbe.Tai callback function apply korechi () => setModalData(null)
               htmlFor="my_modal_6"
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
             >
@@ -29,7 +30,7 @@ const Modal = ({ data, setModalData }) => {
             </h3>
 
             <p className="py-4">
-              The {name} is a {action} {category} known for its reliability and
+              The {name} is a { action } {category} known for its reliability and
               versatility. It belongs to the category of {category}s and has a
               capacity of {capacity} rounds. The {category} uses {bullet}{" "}
               bullets and features a sleek design. Its action mechanism ensures
